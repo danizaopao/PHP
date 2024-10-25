@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+header{
+    text-align: center;
+    background: linear-gradient(to left, #FD7208, #9D4502);
+}
+body{
+    background: linear-gradient(to left, rgb(238, 118, 20), rgb(230, 157, 108));
+}
+h1{
+    color: white;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+h2{
+    color: white;
+}
+.foto1{
+    display: flex;
+    position: absolute;
+    left: 550px;
+    border-radius: 50px ;
+}
+.formulario{
+    background-color: #FD7208;
+    width: 250px;;
+    height: 350px;
+    text-align: start;
+    margin-top: 10;
+    border-color: white;
+    padding: 10px;
+    border: solid white;
+    border-radius: 30px;
+    position: absolute;
+    left: 100px;
+    top: 150px;
+}
+.buttom{
+    background-color: white;
+}
+.buttom:hover{
+    background-color: rgb(255, 102, 0);
+}
+input:focus{
+    background-color: rgb(214, 208, 208);
+}
+input:focus{
+    background-color: rgb(216, 211, 211);
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+button:hover{
+    color: green
+}
+button:active{
+    color: blue;
+}
+#email:valid{
+    color: blue;
+}
+#email:invalid{
+    color: red;
+}
+.login_b{
+    position: absolute;
+    left: 1250px;
+    top: 45px;
+    height: 50px;
+    width: 70px;
+}

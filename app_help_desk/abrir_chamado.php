@@ -32,7 +32,7 @@
               <div class="row">
                 <div class="col">
                   
-                  <form>
+                  <form action="registra_chamado.php" method="POST">
                     <div class="form-group">
                       <label>Título</label>
                       <input type="text" class="form-control" placeholder="Título">

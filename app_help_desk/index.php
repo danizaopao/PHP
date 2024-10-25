@@ -1,60 +1,34 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>App Help Desk</title>
-    <link rel="stylesheet" type="text/css" href="bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-
-    </style>
-  </head>
-
-  <body>
-
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
-        <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        App Help Desk
-      </a>
-    </nav>
-
-    <div class="container">    
-      <div class="row">
-
-        <div class="card-login">
-          <div class="card">
-            <div class="card-header">
-              Login
-            </div>
-            <div class="card-body">
-              <form action="valida_login.php" method="POST">
-                <div class="form-group">
-                  <input type="email" name="email" class="form-control" placeholder="E-mail" >
-                </div>
-                <div class="form-group">
-                  <input type="password" name ="senha" class="form-control" placeholder="Senha" >
-                </div>
-               
-              <?php
-              if(isset($_GET['login']) && $_GET['login'] == 'erro'){
-              ?>
-              <div class="text-danger">
-              Usuário ou senha inválido(s) !!!
-              </div>
-              <?php } ?>
-
-              <?php
-              if(isset($_GET['login']) && $_GET['login'] == 'erro2'){
-              ?>
-              <div class="text-danger">
-              Faça o login primeiro !!!
-              </div>
-              <?php } ?>
-               
-                <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
-              </form>
-            </div>
-          </div>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cores.css">
+</head>
+<body>
+    <header>
+        <h1>Olá bem-Vindo à nossa página</h1>
+        <h2>Conclua o formulario a seguir</h2>
+    </header>
+    <main>
+        <img src="img/mine.jpeg" height="450px" class="foto1">
+        <div class="formulario">
+        <form action="">
+            <label for="name" class="focus">Nome:</label>
+            <input type="text" name="" id="name" placeholder="Insira seu nome" required><br><br>
+            <label for="email" class="focus">Email:</label>
+            <input type="text" name="email" id="email" placeholder="Insira seu email" required><br><br>
+            <label for="tel" class="focus">Telefone:</label>
+            <input type="tel" name="tel" id="tel" placeholder="Insira seu telefone" required><br><br>
+            <label for="mensagem" class="focus">mensagem:</label>
+            <textarea name="mensagem" placeholder="Digite aqui uma mensagem" rows="9" cols="30"></textarea><br><br>
+            <center><input type="submit" value="Cadastrar" class="buttom" ></center>
+        </form>
         </div>
-    </div>
-  </body>
+        <a href="entrar.php"><input type="submit" value="login" class="login_b"></a>
+        </form>
+    </main>
+</body>
 </html>

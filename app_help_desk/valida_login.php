@@ -28,7 +28,7 @@ if ($usuario_autenticado){
     header ('Location: painel.php');
 }else {
     $_SESSION['autenticado'] = 'NÃO';
-    header ('Location: index.php?login=erro');
+    header ('Location: entrar.php?login=erro');
 }
 ?>
 
@@ -196,6 +196,6 @@ LOGIN.PHP
 session_start();
 
 if(!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] != 'SIM'){
-  header ('Location: index.php?login=erro2');
+  header ('Location: entrar.php?login=erro2');
 }
 ?>
